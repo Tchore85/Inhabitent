@@ -23,7 +23,14 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
+			<div class ="container">
+			<?php get_search_form();?>
+			<div class="site-branding">
+				<div class="logo">
+					<img src="<?php echo get_stylesheet_directory_uri();?>/images/inhabitent-logo-tent-white.svg">
+</div>
+</div>
+
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
@@ -34,4 +41,4 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
-			<div id="content" class="site-content">
+		

@@ -65,6 +65,76 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'page-templates';
 
 // body {
-//   background: grey;
+//   background: black;
 //   color: white;
 // }
+
+a:visited {
+  color: purple;
+}
+.main-navigation a {
+  width: 9rem;
+}
+
+.logo {
+  position: absolute;
+  //   width: 34%;
+}
+
+.logo img {
+  width: 32%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.search-form {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 90rem;
+  border: none;
+}
+fieldset {
+  border: none;
+  padding-top: 1rem;
+  padding-right: 2rem;
+}
+
+.main-navigation {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  float: left;
+  padding-right: 18rem;
+  padding-top: 1rem;
+}
+
+.logo-full {
+  position: absolute;
+  margin: 20% 40%;
+}
+.home-hero2 img {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)),
+    #969696;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  //   color: white;
+  text-transform: uppercase;
+  border: solid;
+}
+// This is the Footer area
+
+.dark-wood {
+  border: solid;
+
+  //   background-image: url(../../images/dark-wood.png);
+}
+
+//THIS IS THE FOOTER AREA
+.footer-blocks-container {
+  display: flex;
+  justify-content: space-around;
+}
