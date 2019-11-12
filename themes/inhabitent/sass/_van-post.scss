@@ -1,0 +1,44 @@
+.entry-header {
+  margin-top: 5rem;
+}
+
+.entry-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.entry-title {
+  position: absolute;
+  background: #248a83;
+  color: white;
+  font-size: 2.1rem;
+  margin-top: 1rem;
+  width: 34rem;
+  margin-left: 10rem;
+  padding: 0.75rem 1.5rem;
+  line-height: 2.5rem;
+}
+.entry-meta {
+  font-family: Novecento Sans Web, sans-serif;
+  position: absolute;
+  background: #248a83;
+  color: white;
+  text-transform: uppercase;
+  right: 517px;
+  margin-top: 29.5rem;
+  padding: 0.5rem 2rem;
+}
+.comments-link a {
+  color: white;
+  text-decoration-line: none;
+}
+
+.entry-footer {
+  text-transform: uppercase;
+  display: flex;
+  padding-left: 10rem;
+}
+.cat-links {
+  margin-right: 2rem;
+}

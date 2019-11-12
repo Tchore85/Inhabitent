@@ -63,51 +63,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'content';
 @import 'media';
 @import 'page-templates';
+@import 'van-post.scss';
 
 // body {
 //   background: black;
 //   color: white;
 // }
 
-a:visited {
-  color: purple;
-}
-.main-navigation a {
-  width: 9rem;
+// a:visited {
+//   color: purple;
+// }
+
+.site-description {
+  margin-bottom: -1.5rem;
 }
 
-.logo {
-  position: absolute;
-  //   width: 34%;
-}
-
-.logo img {
-  width: 32%;
-  display: flex;
-  margin: 0 auto;
-}
-
-.search-form {
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  width: 90rem;
-  border: none;
-}
-fieldset {
-  border: none;
-  padding-top: 1rem;
-  padding-right: 2rem;
-}
-
-.main-navigation {
-  position: absolute;
-  display: flex;
-  justify-content: flex-end;
-  float: left;
-  padding-right: 18rem;
-  padding-top: 1rem;
-}
+// THIS IS THE HEADER
 
 .logo-full {
   position: absolute;
@@ -116,6 +87,24 @@ fieldset {
 .home-hero2 img {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)),
     #969696;
+  // url(../images/home-hero.jpg);
+}
+
+// THIS IS THE FOOTER AREA
+
+.dark-wood {
+  border: solid;
+
+  // background-image: url(../../inhabitent/images/dark-wood.png);
+}
+
+.footer-blocks-container {
+  display: flex;
+  justify-content: space-around;
+}
+.text-footer h3 {
+  color: #d99054;
+  text-transform: uppercase;
 }
 
 .copyright {
@@ -125,16 +114,32 @@ fieldset {
   text-transform: uppercase;
   border: solid;
 }
-// This is the Footer area
-
-.dark-wood {
-  border: solid;
-
-  //   background-image: url(../../images/dark-wood.png);
+.a-footer a {
+  color: black;
+  font-style: normal;
 }
 
-//THIS IS THE FOOTER AREA
-.footer-blocks-container {
-  display: flex;
-  justify-content: space-around;
+//THIS IS THE GRID AREA ON FRON PAGE
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'kayak kayak beach beach' 'kayak kayak hills stars';
+}
+
+.kayak {
+  grid-area: kayak;
+}
+
+.beach {
+  grid-area: beach;
+}
+
+.hills {
+  grid-area: hills;
+}
+
+.stars {
+  grid-area: stars;
 }

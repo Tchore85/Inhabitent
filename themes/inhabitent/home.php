@@ -1,12 +1,22 @@
-<?php get_header();?>
+<?php
+/**
+ * The main template file.
+ *
+ * @package RED_Starter_Theme
+ */
 
-<div class="about-hero">
-<img src="<?php echo get_stylesheet_directory_uri();?>/images/about-hero.jpg">
-</div> 
+get_header(); ?>
+
+<div class="grid-container">
+  <div class="journal-selection">
+ 
+  <!-- <img src="<?php echo get_stylesheet_directory_uri();?>/images/blog-photos/van-camper.jpg"> -->
+  <div class="van">
+<!-- <img src="<?php echo get_stylesheet_directory_uri();?>/images/blog-photos/van-camper.jpg"> -->
+</div>
 
 
-
-<div id="primary" class="content-area">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -36,8 +46,14 @@
 	</div><!-- #primary -->
 
 
+    <?php //wp_get_archives('type=yearly'); ?>
+    
+    </div>
 
+    <div class="sidebar-uni">
 
-	<?php //wp_get_archives('type=yearly'); ?>
+    <?php get_sidebar(); ?>
+    </div>
+</div>
 
-<?php get_footer();?>
+<?php get_footer(); ?>

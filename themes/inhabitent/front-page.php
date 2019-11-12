@@ -15,8 +15,22 @@
 </section>
 
 
+
+
 </main>
 </div>
 </div>
+
+<div class="grid-container">
+  <div class="kayak">
+
+  <img src="<?php echo get_stylesheet_directory_uri();?>/images/canoe-girl.jpg">
+
+  </div>
+  <div class="beach"></div>
+  <div class="hills"></div>
+  <div class="stars"></div>
+</div>
+
 <?php
 get_footer ();
