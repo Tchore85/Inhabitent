@@ -9,7 +9,7 @@
 
 			</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
+			<footer id="colophon" class="site-footer dark-wood"  role="contentinfo">
 				<div class="site-info">
 					<!-- <a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a> -->
 		<div class="footer-blocks-container">
@@ -49,7 +49,7 @@
 </div>
 
 <div class="footer-block-item">
-<div class="text-logo"><img src="<?php echo get_stylesheet_directory_uri();?>/images/inhabitent-logo-text-dark.svg">
+<div class="text-logo"><img src="<?php echo get_stylesheet_directory_uri();?>/images/inhabitent-logo-text.svg">
 </div>
 </div>
 </div>
@@ -64,7 +64,7 @@
 
 
 		<!-- <div class="dark-wood" alt="wood"> -->
-	<img src="<?php echo get_stylesheet_directory_uri();?>/images/dark-wood.png">
+	<!-- <img src="<?php// echo get_stylesheet_directory_uri();?>/images/dark-wood.png"> -->
 
 	<!-- <img src="../../images/dark-wood.png" alt="wood"> -->
 	

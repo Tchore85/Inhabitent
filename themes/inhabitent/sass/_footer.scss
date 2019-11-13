@@ -1,0 +1,34 @@
+.dark-wood {
+  background-image: url(../../images/dark-wood.png);
+  background-size: cover;
+}
+
+.footer-blocks-container {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  height: 18rem;
+  padding-top: 2rem;
+}
+.text-footer h3 {
+  color: #d99054;
+  text-transform: uppercase;
+  font-family: Novocento Sans Web, sans-serif;
+  font-size: 1rem;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 1.5rem 0;
+}
+.a-footer a {
+  color: white;
+  font-style: normal;
+}
+.text-logo {
+  padding-top: 2rem;
+  width: 17rem;
+}

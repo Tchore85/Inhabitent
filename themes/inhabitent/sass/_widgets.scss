@@ -30,7 +30,7 @@
 
 .sidebar-uni {
   grid-area: Sidebar-uni;
-  border: solid grey;
+  //   border: solid grey;
   // display: flex;
   // text-align: center;
 }
@@ -72,6 +72,18 @@
   list-style: none;
   margin: 0;
 }
+
+//THIS IS THE SIDEBAR-FIN US GOOGLE MAPS
+
+.sidebar-uni {
+  //   grid-area: b;
+  border-left: 1px solid #a1a1a1;
+  margin-top: 5rem;
+}
+// .widget-area {
+//   padding-top: 3rem;
+// }
+
 //THIS IS THE CONTACT FORM
 .wpcf7-form {
   text-transform: uppercase;

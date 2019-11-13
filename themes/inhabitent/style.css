@@ -223,7 +223,7 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
-# Embedded Fonts
+# Embedded ../../fonts
 --------------------------------------------------------------*/
 /**
  * Sample @font-face rules for Merriweather
@@ -232,6 +232,55 @@ th {
  * Copy these rules into the appropriate Sass partial and update the file paths as needed
  *
 */
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../fonts/merriweather-light-webfont.eot");
+  src: url("../../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/merriweather-light-webfont.woff") format("woff"), url("../../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../fonts/merriweather-lightitalic-webfont.eot");
+  src: url("../../fonts/merriweather-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-lightitalic-webfont.woff") format("woff"), url("../../fonts/merriweather-lightitalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../fonts/merriweather-bold-webfont.eot");
+  src: url("../../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bold-webfont.woff") format("woff"), url("../../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather Web';
+  src: url("../../fonts/merriweather-bolditalic-webfont.eot");
+  src: url("../../fonts/merriweather-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bolditalic-webfont.woff") format("woff"), url("../../fonts/merriweather-bolditalic-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bolditalic-webfont.svg#merriweatherbold_italic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+/**
+     * Sample @font-face rules for Novocento
+     * 
+     * Usage:
+     * Copy these rules into the appropriate Sass partial and update the file paths as needed
+     *
+    */
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -505,7 +554,7 @@ a {
   width: 50%; }
 
 .nav-menu a {
-  color: white; }
+  color: #248a83; }
 
 a {
   color: #248a83; }
@@ -530,7 +579,8 @@ a {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 90rem;
-  border: none; }
+  border-bottom: 1px solid #a1a1a1;
+  margin-top: 0.75rem; }
 
 .search-submit {
   background: transparent;
@@ -552,7 +602,7 @@ fieldset {
   text-align: center;
   float: left;
   padding-right: 12rem;
-  padding-top: 1rem; }
+  padding-top: 2rem; }
 
 #menu-item-73 {
   width: 58rem; }
@@ -654,8 +704,7 @@ fieldset {
   grid-area: journal-selection; }
 
 .sidebar-uni {
-  grid-area: Sidebar-uni;
-  border: solid grey; }
+  grid-area: Sidebar-uni; }
 
 .widget-area {
   padding-top: 3rem;
@@ -695,6 +744,10 @@ fieldset {
 #archives-2 ul {
   list-style: none;
   margin: 0; }
+
+.sidebar-uni {
+  border-left: 1px solid #a1a1a1;
+  margin-top: 5rem; }
 
 .wpcf7-form {
   text-transform: uppercase; }
@@ -830,9 +883,11 @@ object {
 .entry-content {
   margin-left: auto;
   margin-right: auto;
-  width: 70%; }
+  width: 70%;
+  margin-top: 8rem; }
 
-.entry-title {
+.blog .entry-title,
+.single-post .entry-title {
   position: absolute;
   background: #248a83;
   color: white;
@@ -843,7 +898,8 @@ object {
   padding: 0.75rem 1.5rem;
   line-height: 2.5rem; }
 
-.entry-meta {
+.blog .entry-meta,
+.single-post .entry-meta {
   font-family: Novecento Sans Web, sans-serif;
   position: absolute;
   background: #248a83;
@@ -868,30 +924,25 @@ object {
 .cat-links {
   margin-right: 2rem; }
 
-.site-description {
-  margin-bottom: -1.5rem; }
-
-.logo-full {
-  position: absolute;
-  margin: 20% 40%; }
-
-.home-hero2 img {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696; }
-
 .dark-wood {
-  border: solid; }
+  background-image: url(../../images/dark-wood.png);
+  background-size: cover; }
 
 .footer-blocks-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  color: white;
+  height: 18rem;
+  padding-top: 2rem; }
 
 .text-footer h3 {
   color: #d99054;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: Novocento Sans Web, sans-serif;
+  font-size: 1rem; }
 
 .copyright {
   display: -webkit-box;
@@ -901,26 +952,44 @@ object {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
-  border: solid; }
+  color: white;
+  padding: 1.5rem 0; }
 
 .a-footer a {
-  color: black;
+  color: white;
   font-style: normal; }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 'kayak kayak beach beach' 'kayak kayak hills stars'; }
+.text-logo {
+  padding-top: 2rem;
+  width: 17rem; }
 
-.kayak {
-  grid-area: kayak; }
+.logo-full {
+  position: absolute;
+  margin: -45% 40%; }
 
-.beach {
-  grid-area: beach; }
+.home-hero2 img {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696; }
 
-.hills {
-  grid-area: hills; }
+.page .entry-title {
+  color: #a1a1a1;
+  font-family: 'Novecento Sans Web', sans-serif;
+  letter-spacing: 2px;
+  font-size: 2.4rem; }
 
-.stars {
-  grid-area: stars; }
+.about-page .entry-title {
+  color: green; }
+
+body {
+  font-family: 'Merriweather Web', serif; }
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Novecento Sans Web', sans-serif; }
+
+.site-description {
+  margin-bottom: -1.5rem; }

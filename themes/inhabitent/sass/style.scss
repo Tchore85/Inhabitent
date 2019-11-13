@@ -64,82 +64,25 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'media';
 @import 'page-templates';
 @import 'van-post.scss';
+@import 'footer';
+@import 'header';
+@import 'find-us';
 
-// body {
-//   background: black;
-//   color: white;
-// }
+body {
+  font-family: 'Merriweather Web', serif;
+}
 
-// a:visited {
-//   color: purple;
-// }
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Novecento Sans Web', sans-serif;
+}
 
 .site-description {
   margin-bottom: -1.5rem;
 }
 
-// THIS IS THE HEADER
-
-.logo-full {
-  position: absolute;
-  margin: 20% 40%;
-}
-.home-hero2 img {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)),
-    #969696;
-  // url(../images/home-hero.jpg);
-}
-
-// THIS IS THE FOOTER AREA
-
-.dark-wood {
-  border: solid;
-
-  // background-image: url(../../inhabitent/images/dark-wood.png);
-}
-
-.footer-blocks-container {
-  display: flex;
-  justify-content: space-around;
-}
-.text-footer h3 {
-  color: #d99054;
-  text-transform: uppercase;
-}
-
-.copyright {
-  display: flex;
-  justify-content: center;
-  //   color: white;
-  text-transform: uppercase;
-  border: solid;
-}
-.a-footer a {
-  color: black;
-  font-style: normal;
-}
-
 //THIS IS THE GRID AREA ON FRON PAGE
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 'kayak kayak beach beach' 'kayak kayak hills stars';
-}
-
-.kayak {
-  grid-area: kayak;
-}
-
-.beach {
-  grid-area: beach;
-}
-
-.hills {
-  grid-area: hills;
-}
-
-.stars {
-  grid-area: stars;
-}

@@ -41,4 +41,17 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
-		
+			<?php //if ( has_post_thumbnail() ) {
+// 	          the_post_thumbnail();
+// } 
+if(is_front_page() || is_page('about')){
+	if ( has_post_thumbnail() ) {
+		the_post_thumbnail();
+	}
+ }
+
+
+?>
+
+		<div id="content" class="site-content">
+
