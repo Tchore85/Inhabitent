@@ -490,21 +490,15 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  float: left; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
+      top: 1.5rem; }
       .main-navigation ul ul ul {
         left: -999rem;
         top: 0; }
@@ -517,7 +511,6 @@ a {
     .main-navigation ul li.focus > ul {
       left: auto; }
   .main-navigation li {
-    float: left;
     position: relative; }
   .main-navigation a {
     display: block;
@@ -530,9 +523,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
+    display: none; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -553,14 +544,17 @@ a {
   text-align: right;
   width: 50%; }
 
-.nav-menu a {
-  color: #248a83; }
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .nav-menu a {
+    color: #248a83; }
 
 a {
   color: #248a83; }
 
 .logo {
-  position: absolute;
   padding: 1rem; }
 
 .logo img {
@@ -571,16 +565,12 @@ a {
   margin: 0 auto; }
 
 .search-form {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 90rem;
-  border-bottom: 1px solid #a1a1a1;
-  margin-top: 0.75rem; }
+          justify-content: flex-end; }
 
 .search-submit {
   background: transparent;
@@ -595,22 +585,15 @@ fieldset {
   padding-right: 2rem; }
 
 .main-navigation {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
-  float: left;
-  padding-right: 12rem;
-  padding-top: 2rem; }
-
-#menu-item-73 {
-  width: 58rem; }
+  text-align: center; }
 
 #menu-item-74,
 #menu-item-75,
-#menu-item-76 {
-  width: 5rem;
+#menu-item-76,
+#menu-item-110 {
   text-transform: uppercase; }
 
 .comment-respond {
@@ -878,12 +861,18 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .entry-header {
-  margin-top: 5rem; }
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .entry-content {
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  max-width: 800px;
   margin-top: 8rem; }
 
 .blog .entry-title,
@@ -892,9 +881,9 @@ object {
   background: #248a83;
   color: white;
   font-size: 2.1rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   width: 34rem;
-  margin-left: 10rem;
+  margin-left: -6.5rem;
   padding: 0.75rem 1.5rem;
   line-height: 2.5rem; }
 
@@ -906,8 +895,8 @@ object {
   color: white;
   text-transform: uppercase;
   right: 517px;
-  margin-top: 29.5rem;
-  padding: 0.5rem 2rem; }
+  padding: 0.5rem 2rem;
+  margin-bottom: -14.5; }
 
 .comments-link a {
   color: white;
@@ -923,6 +912,10 @@ object {
 
 .cat-links {
   margin-right: 2rem; }
+
+.blog .wp-post-image,
+.single-post .wp-post-image {
+  width: 753px; }
 
 .dark-wood {
   background-image: url(../../images/dark-wood.png);
@@ -971,14 +964,67 @@ object {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696; }
 
+.site-header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0.5rem 0;
+  z-index: 3;
+  height: 5rem; }
+
 .page .entry-title {
   color: #a1a1a1;
   font-family: 'Novecento Sans Web', sans-serif;
   letter-spacing: 2px;
   font-size: 2.4rem; }
 
+.page .entry-content {
+  margin-top: 1rem; }
+
 .about-page .entry-title {
   color: green; }
+
+.canoe-girl {
+  background-image: url(../../images/canoe-girl.jpg); }
+
+.selected-posts-front-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.about-page .entry-title {
+  color: #fff;
+  position: absolute;
+  margin: -50% 0%; }
+
+.page .attachment-post-thumbnail {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(https://tent.academy.red/wp-content/uploads/2016/04/about-hero.jpg) no-repeat center bottom;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(https://tent.academy.red/wp-content/uploads/2016/04/about-hero.jpg) no-repeat center bottom;
+  background-size: cover, cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.entry-content h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 body {
   font-family: 'Merriweather Web', serif; }

@@ -7,3 +7,15 @@
     #969696;
   // url(../images/home-hero.jpg);
 }
+
+.site-header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0.5rem 0;
+  z-index: 3;
+  height: 5rem;
+}
