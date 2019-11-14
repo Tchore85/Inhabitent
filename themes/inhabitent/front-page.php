@@ -17,6 +17,16 @@
 </section>
 
 <!-- <section class="selected-posts"> -->
+	<?php
+$terms = get_terms( array(
+  'taxonomy' => 'product-type', // the taxonomy name based on your custom taxonomy slug
+  'hide_empty' => false, // tell WordPress if you want to hide any empty terms that you may have
+));
+$product_section=get_posts($terms);
+?>
+<?php var_dump($terms);?>
+
+
 <div class ="selected-posts-front-page">
 <?php
 
@@ -26,7 +36,7 @@ $journal_posts = get_posts( $args ); // returns an array of posts
 <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 <article class="post">
 <div class="post-image">
-<?php the_post_thumbnail([768,420]);?>
+<?php the_post_thumbnail([707,480]);?>
 </div>
 <?php the_title();?>
 <?php the_date();?>

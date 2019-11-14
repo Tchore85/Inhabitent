@@ -478,7 +478,7 @@ textarea {
 a {
   color: royalblue; }
   a:visited {
-    color: purple; }
+    color: #a79ca7; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -558,11 +558,12 @@ a {
   padding: 1rem; }
 
 .logo img {
-  width: 32%;
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-left: -150%; }
 
 .search-form {
   display: -webkit-box;
@@ -590,14 +591,18 @@ fieldset {
   display: flex;
   text-align: center; }
 
+#menu-item-73 {
+  width: 7rem; }
+
 #menu-item-74,
 #menu-item-75,
 #menu-item-76,
 #menu-item-110 {
+  width: 6rem;
   text-transform: uppercase; }
 
 .comment-respond {
-  margin-left: 10rem; }
+  margin-left: 8.5rem; }
 
 .comment-form-comment label {
   position: absolute; }
@@ -687,7 +692,13 @@ fieldset {
   grid-area: journal-selection; }
 
 .sidebar-uni {
-  grid-area: Sidebar-uni; }
+  grid-area: Sidebar-uni;
+  border-left: 1px solid #e1e1e1;
+  margin-top: 3rem;
+  margin-left: -4rem; }
+
+.sidebar-uni a {
+  font-family: 'Merriweather Web', serif; }
 
 .widget-area {
   padding-top: 3rem;
@@ -698,7 +709,14 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Merriweather Web', serif; }
+
+.textwidget {
+  font-family: 'Merriweather Web', serif; }
+
+.textwidget h3 {
+  font-size: 24px; }
 
 #custom_html-2 {
   text-align: initial;
@@ -727,10 +745,6 @@ fieldset {
 #archives-2 ul {
   list-style: none;
   margin: 0; }
-
-.sidebar-uni {
-  border-left: 1px solid #a1a1a1;
-  margin-top: 5rem; }
 
 .wpcf7-form {
   text-transform: uppercase; }
@@ -861,7 +875,7 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .entry-header {
-  margin-top: 10rem;
+  margin-top: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,7 +887,8 @@ object {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
-  margin-top: 8rem; }
+  margin-top: 8rem;
+  line-height: 1.75; }
 
 .blog .entry-title,
 .single-post .entry-title {
@@ -881,22 +896,35 @@ object {
   background: #248a83;
   color: white;
   font-size: 2.1rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   width: 34rem;
-  margin-left: -6.5rem;
+  margin-left: -7.75rem;
   padding: 0.75rem 1.5rem;
   line-height: 2.5rem; }
 
-.blog .entry-meta,
 .single-post .entry-meta {
-  font-family: Novecento Sans Web, sans-serif;
+  font-family: 'Novecento Sans Web', sans-serif;
   position: absolute;
   background: #248a83;
   color: white;
   text-transform: uppercase;
-  right: 517px;
+  right: 504px;
   padding: 0.5rem 2rem;
-  margin-bottom: -14.5; }
+  bottom: 0;
+  margin-bottom: 4.5rem; }
+
+.blog .entry-meta {
+  font-family: 'Novecento Sans Web', sans-serif;
+  position: absolute;
+  background: #248a83;
+  color: white;
+  text-transform: uppercase;
+  right: 504px;
+  padding: 0.5rem 2rem; }
+
+.blog .entry-title a {
+  color: white;
+  text-decoration: none; }
 
 .comments-link a {
   color: white;
@@ -908,14 +936,14 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 10rem; }
+  padding-left: 8.5rem; }
 
 .cat-links {
   margin-right: 2rem; }
 
 .blog .wp-post-image,
 .single-post .wp-post-image {
-  width: 753px; }
+  width: 791px; }
 
 .dark-wood {
   background-image: url(../../images/dark-wood.png);
@@ -977,7 +1005,10 @@ object {
   border-bottom: 1px solid #e1e1e1;
   padding: 0.5rem 0;
   z-index: 3;
-  height: 5rem; }
+  height: 3rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .page .entry-title {
   color: #a1a1a1;
@@ -1027,7 +1058,8 @@ object {
           justify-content: center; }
 
 body {
-  font-family: 'Merriweather Web', serif; }
+  font-family: 'Merriweather Web', serif;
+  background-color: #ffffff; }
 
 a,
 h1,
@@ -1036,6 +1068,16 @@ h3,
 h4,
 h5 {
   font-family: 'Novecento Sans Web', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 .site-description {
   margin-bottom: -1.5rem; }

@@ -72,6 +72,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 body {
   font-family: 'Merriweather Web', serif;
+  background-color: #ffffff;
 }
 
 a,
@@ -82,7 +83,16 @@ h4,
 h5 {
   font-family: 'Novecento Sans Web', sans-serif;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 .site-description {
   margin-bottom: -1.5rem;
 }

@@ -30,15 +30,32 @@
 
 .sidebar-uni {
   grid-area: Sidebar-uni;
-  //   border: solid grey;
-  // display: flex;
-  // text-align: center;
+  border-left: 1px solid #e1e1e1;
+  margin-top: 3rem;
+
+  margin-left: -4rem;
 }
+.sidebar-uni {
+  a {
+    font-family: 'Merriweather Web', serif;
+  }
+}
+
 .widget-area {
   padding-top: 3rem;
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-family: 'Merriweather Web', serif;
+}
+
+.textwidget {
+  font-family: 'Merriweather Web', serif;
+}
+.textwidget {
+  h3 {
+    font-size: 24px;
+  }
 }
 
 #custom_html-2 {
@@ -76,9 +93,8 @@
 //THIS IS THE SIDEBAR-FIN US GOOGLE MAPS
 
 .sidebar-uni {
-  //   grid-area: b;
-  border-left: 1px solid #a1a1a1;
-  margin-top: 5rem;
+  // border-left: 1px solid #a1a1a1;
+  // margin-top: 5rem;
 }
 // .widget-area {
 //   padding-top: 3rem;
