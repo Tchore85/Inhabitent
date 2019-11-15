@@ -42,14 +42,38 @@
 			<?php //if ( has_post_thumbnail() ) {
 // 	          the_post_thumbnail();
 // } 
-if(is_front_page() || is_page('about')){
-	if ( has_post_thumbnail() ) {
-		the_post_thumbnail();
-	}
+if(is_front_page()){
+	if ( has_post_thumbnail() ) { ?>
+
+		<section class="home-hero" style="height: 100vh; 
+		background:linear-gradient(180deg, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)),
+		
+		url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover;">
+			<div class="logo-full">
+				<img src="<?php echo get_template_directory_uri();?>/images/inhabitent-logo-full.svg">
+			</div>
+		</section>
+		
+	<?php }
  }
 
+ if(is_page('about')){
+	if ( has_post_thumbnail() ) { ?>
+	<section class="home-hero" style="height: 100vh; 
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)),
 
+	 url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover,cover;"> >
+		<div class="logo-full">
+		
+			<?php the_title(); ?>
+		</div>
+	</section>
+	<?php }
+ }
 ?>
+
+
+
 
 		<div id="content" class="site-content">
 

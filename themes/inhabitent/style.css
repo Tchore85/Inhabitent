@@ -887,7 +887,6 @@ object {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
-  margin-top: 8rem;
   line-height: 1.75; }
 
 .blog .entry-title,
@@ -986,7 +985,10 @@ object {
 
 .logo-full {
   position: absolute;
-  margin: -45% 40%; }
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .home-hero2 img {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696;
@@ -1010,6 +1012,9 @@ object {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
+.home-hero {
+  position: relative; }
+
 .page .entry-title {
   color: #a1a1a1;
   font-family: 'Novecento Sans Web', sans-serif;
@@ -1021,9 +1026,6 @@ object {
 
 .about-page .entry-title {
   color: green; }
-
-.canoe-girl {
-  background-image: url(../../images/canoe-girl.jpg); }
 
 .selected-posts-front-page {
   display: -webkit-box;
