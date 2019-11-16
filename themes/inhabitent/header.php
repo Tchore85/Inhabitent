@@ -45,7 +45,7 @@
 if(is_front_page()){
 	if ( has_post_thumbnail() ) { ?>
 
-		<section class="home-hero" style="height: 100vh; 
+		<section class="home-hero" style=" height: 100vh;
 		background:linear-gradient(180deg, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)),
 		
 		url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover;">
@@ -66,6 +66,7 @@ if(is_front_page()){
 		<div class="logo-full">
 		
 			<?php the_title(); ?>
+
 		</div>
 	</section>
 	<?php }

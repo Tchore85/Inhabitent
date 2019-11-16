@@ -772,6 +772,27 @@ input[type='submit'] {
   border-radius: 0px;
   font-size: 16px; }
 
+/* THIS IS THE OPENING HOURS WIDGET
+
+*/
+#tent-bizz-hours-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: initial;
+  margin-left: 2.5rem;
+  line-height: 0; }
+
+#tent-bizz-hours-2 h2 {
+  margin-bottom: 2.5rem; }
+
+.day-of-week {
+  font-weight: bold; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -910,7 +931,7 @@ object {
   right: 504px;
   padding: 0.5rem 2rem;
   bottom: 0;
-  margin-bottom: 4.5rem; }
+  margin-bottom: 7.5rem; }
 
 .blog .entry-meta {
   font-family: 'Novecento Sans Web', sans-serif;
@@ -919,7 +940,8 @@ object {
   color: white;
   text-transform: uppercase;
   right: 504px;
-  padding: 0.5rem 2rem; }
+  padding: 0.5rem 2rem;
+  margin-top: 35%; }
 
 .blog .entry-title a {
   color: white;
@@ -961,7 +983,7 @@ object {
 .text-footer h3 {
   color: #d99054;
   text-transform: uppercase;
-  font-family: Novocento Sans Web, sans-serif;
+  font-family: 'Novocento Sans Web', sans-serif;
   font-size: 1rem; }
 
 .copyright {
@@ -977,7 +999,11 @@ object {
 
 .a-footer a {
   color: white;
-  font-style: normal; }
+  font-style: normal;
+  font-family: 'Merriweather Web', serif; }
+
+.fa-phone-alt a {
+  font-family: 'Merriweather Web', serif; }
 
 .text-logo {
   padding-top: 2rem;
@@ -1013,16 +1039,27 @@ object {
           justify-content: flex-end; }
 
 .home-hero {
-  position: relative; }
+  position: relative;
+  background-size: cover; }
 
 .page .entry-title {
-  color: #a1a1a1;
+  color: #404040;
   font-family: 'Novecento Sans Web', sans-serif;
   letter-spacing: 2px;
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  width: 73%; }
 
 .page .entry-content {
   margin-top: 1rem; }
+
+.page .entry-content h2 {
+  font-size: 2.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .about-page .entry-title {
   color: green; }
@@ -1030,7 +1067,139 @@ object {
 .selected-posts-front-page {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 72%; }
+
+a.btn {
+  font-family: 'Novecento Sans Web', sans-serif;
+  border: solid;
+  text-transform: uppercase;
+  background: #248a83;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-size: 0.9rem; }
+
+.home h2 {
+  font-size: 38.4px;
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.home .post-title {
+  font-size: 1rem;
+  font-family: 'Novecento Sans Web', sans-serif;
+  color: #248a83;
+  text-decoration: none; }
+
+.home .post-info-wrapper {
+  padding: 1.75rem; }
+
+.home .post-date {
+  font-size: 12px; }
+
+.home .post {
+  border: 1px solid #e1e1e1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 23%;
+          flex: 0 1 23%; }
+
+.home .product-type-block-wrapper {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  -ms-flex: 0 1 23.5%;
+  -webkit-box-flex: 0;
+          flex: 0 1 23.5%;
+  max-width: 23.5%;
+  padding: 0.75rem; }
+
+.home .product-type-block-wrapper img {
+  max-width: 31%; }
+
+.grid-container-nature {
+  width: 1112px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4.5rem;
+  height: 645px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'canoe-girl canoe-girl beach-fire beach-fire' 'canoe-girl canoe-girl hills sky'; }
+
+.canoe-direct,
+.stars-pct,
+.hills-pcs,
+.fire-beach-pcs {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: 10px solid white; }
+
+.canoe-girl {
+  grid-area: canoe-girl; }
+
+.beach-fire {
+  grid-area: beach-fire; }
+
+.hills {
+  grid-area: hills; }
+
+.sky {
+  grid-area: sky; }
+
+.canoe-text,
+.beach-text,
+.hills-text,
+.stars-text {
+  position: absolute;
+  font-size: 42px;
+  color: #fff;
+  font-family: 'Merriweather Web', serif;
+  font-weight: 400;
+  text-transform: none;
+  width: 29rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  z-index: 2;
+  cursor: pointer; }
+
+.beach-text {
+  font-size: 32px; }
+
+.hills-text,
+.stars-text {
+  font-size: 22px;
+  width: 11rem; }
+
+button {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 14.4px;
+  font-family: sans-serif; }
 
 .about-page .entry-title {
   color: #fff;

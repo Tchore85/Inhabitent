@@ -1,15 +1,26 @@
 .page {
   .entry-title {
-    color: #a1a1a1;
+    color: #404040;
     font-family: 'Novecento Sans Web', sans-serif;
     letter-spacing: 2px;
     font-size: 2.4rem;
+    width: 73%;
   }
 }
 
 .page {
   .entry-content {
     margin-top: 1rem;
+  }
+}
+.page {
+  .entry-content {
+    h2 {
+      font-size: 2.1rem;
+      // width: 84%;
+      display: flex;
+      justify-content: flex-start;
+    }
   }
 }
 

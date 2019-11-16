@@ -13,7 +13,7 @@
 .text-footer h3 {
   color: #d99054;
   text-transform: uppercase;
-  font-family: Novocento Sans Web, sans-serif;
+  font-family: 'Novocento Sans Web', sans-serif;
   font-size: 1rem;
 }
 
@@ -27,6 +27,10 @@
 .a-footer a {
   color: white;
   font-style: normal;
+  font-family: 'Merriweather Web', serif;
+}
+.fa-phone-alt a {
+  font-family: 'Merriweather Web', serif;
 }
 .text-logo {
   padding-top: 2rem;
