@@ -1,0 +1,41 @@
+.single-product {
+  .entry-header {
+    margin-top: 3rem;
+    justify-content: start;
+
+    .site-header {
+      position: unset;
+    }
+  }
+}
+
+.single-single-picture {
+  padding-bottom: 1rem;
+}
+
+.single-single-title {
+  margin-left: 5rem;
+  margin-top: -2rem;
+  .entry-title {
+    color: #d99054;
+  }
+}
+.single-single-price {
+  margin-left: -11rem;
+  margin-top: 1rem;
+
+  h2 {
+    font-size: 28.8px;
+    font-weight: normal;
+  }
+}
+
+.entry-content-single-single {
+  display: flex;
+  line-height: 1.75;
+  text-align: inherit;
+  margin-left: 50%;
+  margin-top: -24%;
+  position: absolute;
+  width: 43rem;
+}

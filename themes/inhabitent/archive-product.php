@@ -49,8 +49,11 @@ get_header(); ?>
 
 						<?php if ( 'post' === get_post_type() ) : ?>
 						<div class="entry-meta">
+						
 							Price will go here
-						</div><!-- .entry-meta -->
+						</div>
+						
+						<!-- .entry-meta -->
 						<?php endif; ?>
 					</header><!-- .entry-header -->
 				</article><!-- #post-## -->

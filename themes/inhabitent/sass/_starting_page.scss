@@ -15,17 +15,6 @@
   }
 }
 
-.product-type-blocks {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  // max-width: 23.5%;
-  //max-width: 45%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 72%;
-}
-
 // .home .product-type-block-wrapper {
 //   border: 1px solid #e1e1e1;
 //   border-top-width: 5px;
@@ -62,10 +51,15 @@ a.btn {
     font-family: 'Novecento Sans Web', sans-serif;
     color: #248a83;
     text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1.25;
+    font-size: 1.3rem;
+    font-weight: bold;
   }
 
   .post-info-wrapper {
     padding: 1.75rem;
+    padding-left: 0.5rem;
   }
 
   .post-date {
@@ -73,7 +67,18 @@ a.btn {
   }
   .post {
     border: 1px solid #e1e1e1;
-    flex: 0 1 23%;
+    flex: 0 1 26%;
+  }
+
+  .product-type-blocks {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    // max-width: 23.5%;
+    //max-width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 84%;
   }
 
   .product-type-block-wrapper {
@@ -81,9 +86,10 @@ a.btn {
     border-top-width: 5px;
     -ms-flex: 0 1 23.5%;
     flex: 0 1 23.5%;
-    max-width: 23.5%;
+    max-width: 22.5%;
     padding: 0.75rem;
     //max-width: 45%;
+    line-height: 1.75rem;
   }
 }
 .home {
@@ -151,7 +157,7 @@ a.btn {
   cursor: pointer;
 }
 .beach-text {
-  font-size: 32px;
+  font-size: 38, 4px;
 }
 
 .hills-text,
@@ -162,10 +168,13 @@ a.btn {
 
 button {
   border: 1px solid #fff;
+  border-radius: 0;
   color: #fff;
   background-color: transparent;
   padding: 0.75rem 1.5rem;
   text-transform: uppercase;
   font-size: 14.4px;
   font-family: sans-serif;
+  font-family: 'Novecento Sans Web', sans-serif;
+  margin-top: 1.5rem;
 }

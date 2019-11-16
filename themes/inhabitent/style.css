@@ -967,8 +967,8 @@ object {
   width: 791px; }
 
 .dark-wood {
-  background-image: url(../../images/dark-wood.png);
-  background-size: cover; }
+  background-image: url(../../images/dark-wood@2x.png);
+  background-size: 512px 512px; }
 
 .footer-blocks-container {
   display: -webkit-box;
@@ -1071,17 +1071,6 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-.product-type-blocks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 72%; }
-
 a.btn {
   font-family: 'Novecento Sans Web', sans-serif;
   border: solid;
@@ -1109,10 +1098,15 @@ a.btn {
   font-size: 1rem;
   font-family: 'Novecento Sans Web', sans-serif;
   color: #248a83;
-  text-decoration: none; }
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 1.25;
+  font-size: 1.3rem;
+  font-weight: bold; }
 
 .home .post-info-wrapper {
-  padding: 1.75rem; }
+  padding: 1.75rem;
+  padding-left: 0.5rem; }
 
 .home .post-date {
   font-size: 12px; }
@@ -1120,8 +1114,19 @@ a.btn {
 .home .post {
   border: 1px solid #e1e1e1;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 23%;
-          flex: 0 1 23%; }
+      -ms-flex: 0 1 26%;
+          flex: 0 1 26%; }
+
+.home .product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 84%; }
 
 .home .product-type-block-wrapper {
   border: 1px solid #e1e1e1;
@@ -1129,8 +1134,9 @@ a.btn {
   -ms-flex: 0 1 23.5%;
   -webkit-box-flex: 0;
           flex: 0 1 23.5%;
-  max-width: 23.5%;
-  padding: 0.75rem; }
+  max-width: 22.5%;
+  padding: 0.75rem;
+  line-height: 1.75rem; }
 
 .home .product-type-block-wrapper img {
   max-width: 31%; }
@@ -1185,7 +1191,7 @@ a.btn {
   cursor: pointer; }
 
 .beach-text {
-  font-size: 32px; }
+  font-size: 38, 4px; }
 
 .hills-text,
 .stars-text {
@@ -1194,12 +1200,15 @@ a.btn {
 
 button {
   border: 1px solid #fff;
+  border-radius: 0;
   color: #fff;
   background-color: transparent;
   padding: 0.75rem 1.5rem;
   text-transform: uppercase;
   font-size: 14.4px;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  font-family: 'Novecento Sans Web', sans-serif;
+  margin-top: 1.5rem; }
 
 .about-page .entry-title {
   color: #fff;
@@ -1227,6 +1236,46 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.first-page-product-choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.single-product .entry-header {
+  margin-top: 3rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start; }
+  .single-product .entry-header .site-header {
+    position: unset; }
+
+.single-single-picture {
+  padding-bottom: 1rem; }
+
+.single-single-title {
+  margin-left: 5rem;
+  margin-top: -2rem; }
+  .single-single-title .entry-title {
+    color: #d99054; }
+
+.single-single-price {
+  margin-left: -11rem;
+  margin-top: 1rem; }
+  .single-single-price h2 {
+    font-size: 28.8px;
+    font-weight: normal; }
+
+.entry-content-single-single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.75;
+  text-align: inherit;
+  margin-left: 50%;
+  margin-top: -24%;
+  position: absolute;
+  width: 43rem; }
 
 body {
   font-family: 'Merriweather Web', serif;

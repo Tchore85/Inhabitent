@@ -6,32 +6,30 @@
  */
 
 get_header(); ?>
-<!-- <div class="grid-container">
-<div class="journal-selection"> -->
 
+				<div id="primary" class="content-area">
+							<main id="main" class="site-main" role="main">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+							<?php while ( have_posts() ) : the_post(); ?>
+							
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<header class="entry-header">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+							<?php if ( has_post_thumbnail() ) : ?>
+					<div class="single-single-picture">
+								<?php the_post_thumbnail( 'large' ); ?>
+					</div>
+					<div class="single-single-title">
+								<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+					</div>
+					<div class="single-single-price">
+								<h2>$<?php the_field('price'); ?></h2>
+					</div>
+							<?php endif; ?>
 
-		<h2>Price: $<?php the_field('price'); ?></h2> 
-
-			
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		
-			 
-		
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content-single-single">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

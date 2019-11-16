@@ -86,7 +86,7 @@
 
           <div class="beach-fire">
           <!-- <div class="fire-beach-pcs"> -->
-          <a class="beach-text">A Night With Friends At The Beach<button type="button">Read More</button></a>
+          <a class="beach-text">A Night With Friends at the Beach<br><button type="button">Read More</button></a>
             <img class="fire-beach-pcs"src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/beach-bonfire.jpg">
 
           </div>
