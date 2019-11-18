@@ -11,10 +11,12 @@
 
 .single-single-picture {
   padding-bottom: 1rem;
+  width: 495px;
+  margin-left: 12rem;
 }
 
 .single-single-title {
-  margin-left: 5rem;
+  margin-left: 2rem;
   margin-top: -2rem;
   .entry-title {
     color: #d99054;
@@ -37,5 +39,21 @@
   margin-left: 50%;
   margin-top: -24%;
   position: absolute;
-  width: 43rem;
+  width: 30rem;
+}
+.black-btn {
+  border: 1px solid #000;
+  color: #000;
+  bottom: 0;
+  background-color: transparent;
+}
+
+.single-product {
+  .site-header {
+    position: unset;
+  }
+}
+
+.social-buttons {
+  margin-left: 50%;
 }

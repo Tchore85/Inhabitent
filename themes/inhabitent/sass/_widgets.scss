@@ -63,9 +63,10 @@
   padding-left: 2.5em;
 }
 
-.fa-phone-alt a {
-  //   color: #248a83;
+a:visited {
+  color: #248a83;
 }
+
 .a-sidebar a {
   color: black;
   font-style: normal;
@@ -121,6 +122,10 @@ textarea {
   border-radius: 0;
 }
 
+label {
+  font-family: 'Novecento Sans Web', sans-serif;
+}
+
 input[type='submit'] {
   background: #248a83;
   color: white;
@@ -128,6 +133,14 @@ input[type='submit'] {
   padding: 0.75rem 1.5rem;
   border-radius: 0px;
   font-size: 16px;
+  text-transform: uppercase;
+
+  p {
+    font-family: 'Novecento Sans Web', sans-serif;
+  }
+}
+.required {
+  color: #d99054;
 }
 
 /* THIS IS THE OPENING HOURS WIDGET

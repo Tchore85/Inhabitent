@@ -3,28 +3,47 @@
     color: #fff;
     position: absolute;
     margin: -50% 0%;
+    display: none;
   }
 }
 
-.page {
-  .attachment-post-thumbnail {
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.4) 0%,
-        rgba(0, 0, 0, 0.4) 100%
-      ),
-      url(https://tent.academy.red/wp-content/uploads/2016/04/about-hero.jpg)
-        no-repeat center bottom;
-    background-size: cover, cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.page-id-45 {
+  .about-hero {
+    .attachment-post-thumbnail {
+      background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.4) 0%,
+          rgba(0, 0, 0, 0.4) 100%
+        ),
+        url(https://tent.academy.red/wp-content/uploads/2016/04/about-hero.jpg)
+          no-repeat center bottom;
+      background-size: cover, cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // background-size: cover;
+      // background-position: 50% 100%;
+      // // display: flex;
+      // // align-items: center;
+      // // justify-content: center;
+    }
   }
 }
-
-.entry-content {
-  h2 {
-    display: flex;
-    justify-content: center;
+.page-id-45 {
+  .entry-content {
+    h2 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .logo-full {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web', sans-serif;
+    // font-family: 'Merriweather Web', serif;
+    font-size: 33px;
+  }
+  .entry-header {
+    margin-top: 0;
   }
 }

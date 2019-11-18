@@ -35,6 +35,11 @@ a.btn {
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   font-size: 0.9rem;
+
+  &:hover {
+    background: #19625d;
+    color: white;
+  }
 }
 .home h2 {
   font-size: 38.4px;

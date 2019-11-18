@@ -23,10 +23,11 @@
 <!-- <i class="envelope"></i> -->
 <i class="a-footer">
 
-			<a>info@inhabitent.com</a></p>
+			<a href="https://www.linkedin.com/in/michal-prokop-b4994617">info@inhabitent.com</a>
+		</p>
 </i>
 			<p><i class="fas fa-phone-alt"></i>
-		     <a> 778-456-7891</a></p>
+		     <a class="numerro-uno"> 778-456-7891</a></p>
 			 </i>
 		<p>
 			<span><i class="fab fa-facebook-square"></i></span>

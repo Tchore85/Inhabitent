@@ -1,3 +1,87 @@
 .first-page-product-choose {
   display: flex;
+  justify-content: center;
+}
+
+.archive {
+  .entry-header {
+    margin-top: 0rem;
+  }
+}
+.post-type-archive {
+  .product-type-block-wrapper {
+    a.btn {
+      color: #248a83;
+      background: white;
+      border: none;
+      font-family: 'Novecento Sans Web', sans-serif;
+      font-size: 19.2px;
+    }
+  }
+}
+
+.archive {
+  .page-header {
+    border-bottom: 1px dashed #c8c8c8;
+    margin-bottom: 3rem;
+  }
+}
+.page-title-archive {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.general-for-archive-title-price {
+  display: flex;
+  justify-content: center;
+}
+.general-for-archive-products {
+  //display: flex;
+  //flex-direction: row;
+  //border: solid;
+  //justify-content: center;
+}
+
+.product-grid-archive {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.thumbnail-wrapper {
+  background-color: #e1e1e1;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+.product-grid-item {
+  border: 1px solid #e1e1e1;
+
+  // left: 50%;
+  // max-height: 250px;
+  // max-width: none;
+  // position: absolute;
+  // top: 50%;
+  // transform: translate(-50%, -52%);
+  // width: auto;
+}
+
+.general-for-archive-title-price {
+  h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Merriweather Web', serif;
+    letter-spacing: 0;
+    line-height: 1.75;
+    padding-right: 0.25rem;
+    text-transform: none;
+    background: #fff;
+    display: inline;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: 'Merriweather Web', serif;
+    color: #2f1339;
+  }
 }

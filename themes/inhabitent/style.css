@@ -582,7 +582,7 @@ a {
 
 fieldset {
   border: none;
-  padding-top: 1rem;
+  padding-top: 0rem;
   padding-right: 2rem; }
 
 .main-navigation {
@@ -722,6 +722,9 @@ fieldset {
   text-align: initial;
   padding-left: 2.5em; }
 
+a:visited {
+  color: #248a83; }
+
 .a-sidebar a {
   color: black;
   font-style: normal; }
@@ -764,13 +767,22 @@ textarea {
   border: 1px solid #e1e1e1;
   border-radius: 0; }
 
+label {
+  font-family: 'Novecento Sans Web', sans-serif; }
+
 input[type='submit'] {
   background: #248a83;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 0px;
-  font-size: 16px; }
+  font-size: 16px;
+  text-transform: uppercase; }
+  input[type='submit'] p {
+    font-family: 'Novecento Sans Web', sans-serif; }
+
+.required {
+  color: #d99054; }
 
 /* THIS IS THE OPENING HOURS WIDGET
 
@@ -1002,8 +1014,9 @@ object {
   font-style: normal;
   font-family: 'Merriweather Web', serif; }
 
-.fa-phone-alt a {
-  font-family: 'Merriweather Web', serif; }
+.numerro-uno {
+  font-family: 'Merriweather Web', serif;
+  color: white; }
 
 .text-logo {
   padding-top: 2rem;
@@ -1081,6 +1094,9 @@ a.btn {
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   font-size: 0.9rem; }
+  a.btn:hover {
+    background: #19625d;
+    color: white; }
 
 .home h2 {
   font-size: 38.4px;
@@ -1213,9 +1229,10 @@ button {
 .about-page .entry-title {
   color: #fff;
   position: absolute;
-  margin: -50% 0%; }
+  margin: -50% 0%;
+  display: none; }
 
-.page .attachment-post-thumbnail {
+.page-id-45 .about-hero .attachment-post-thumbnail {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(https://tent.academy.red/wp-content/uploads/2016/04/about-hero.jpg) no-repeat center bottom;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(https://tent.academy.red/wp-content/uploads/2016/04/about-hero.jpg) no-repeat center bottom;
   background-size: cover, cover;
@@ -1229,7 +1246,7 @@ button {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.entry-content h2 {
+.page-id-45 .entry-content h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1237,10 +1254,84 @@ button {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.page-id-45 .logo-full {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web', sans-serif;
+  font-size: 33px; }
+
+.page-id-45 .entry-header {
+  margin-top: 0; }
+
 .first-page-product-choose {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.archive .entry-header {
+  margin-top: 0rem; }
+
+.post-type-archive .product-type-block-wrapper a.btn {
+  color: #248a83;
+  background: white;
+  border: none;
+  font-family: 'Novecento Sans Web', sans-serif;
+  font-size: 19.2px; }
+
+.archive .page-header {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 3rem; }
+
+.page-title-archive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5rem; }
+
+.general-for-archive-title-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.product-grid-archive {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.thumbnail-wrapper {
+  background-color: #e1e1e1;
+  height: 250px;
+  overflow: hidden;
+  position: relative; }
+
+.product-grid-item {
+  border: 1px solid #e1e1e1; }
+
+.general-for-archive-title-price h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Merriweather Web', serif;
+  letter-spacing: 0;
+  line-height: 1.75;
+  padding-right: 0.25rem;
+  text-transform: none;
+  background: #fff;
+  display: inline; }
+
+.general-for-archive-title-price a {
+  text-decoration: none;
+  font-family: 'Merriweather Web', serif;
+  color: #2f1339; }
 
 .single-product .entry-header {
   margin-top: 3rem;
@@ -1251,10 +1342,12 @@ button {
     position: unset; }
 
 .single-single-picture {
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  width: 495px;
+  margin-left: 12rem; }
 
 .single-single-title {
-  margin-left: 5rem;
+  margin-left: 2rem;
   margin-top: -2rem; }
   .single-single-title .entry-title {
     color: #d99054; }
@@ -1275,7 +1368,35 @@ button {
   margin-left: 50%;
   margin-top: -24%;
   position: absolute;
-  width: 43rem; }
+  width: 30rem; }
+
+.black-btn {
+  border: 1px solid #000;
+  color: #000;
+  bottom: 0;
+  background-color: transparent; }
+
+.single-product .site-header {
+  position: unset; }
+
+.social-buttons {
+  margin-left: 50%; }
+
+.page-header-do-wear-sleep .page-title,
+.page-header-do-wear-sleep .taxonomy-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-header-do-wear-sleep .taxonomy-description {
+  border-bottom: 1px dashed #c8c8c8;
+  margin-bottom: 1.5rem; }
+
+.archive .site-header {
+  position: unset; }
 
 body {
   font-family: 'Merriweather Web', serif;

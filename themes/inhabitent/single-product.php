@@ -25,10 +25,23 @@ get_header(); ?>
 					<div class="single-single-price">
 								<h2>$<?php the_field('price'); ?></h2>
 					</div>
+					
 							<?php endif; ?>
 
 	</header><!-- .entry-header -->
+	<div class="social-buttons">
+						<button type="button" class="black-btn">
+						<i class="fab fa-facebook-f"></i> LIKE</button>
+						
+						<button type="button" class="black-btn">
+						<i class="fab fa-twitter"></i> TWEET</button>
 
+						<button type="button" class="black-btn">
+						<i class="fab fa-pinterest-square"></i> PIN</button>
+				</div>			
+
+
+	
 	<div class="entry-content-single-single">
 		<?php the_content(); ?>
 		<?php
