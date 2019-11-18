@@ -5,16 +5,16 @@
  * @package RED_Starter_Theme
  */
 
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-	<head>
-		<meta charset="<?php bloginfo( 'charset' ); ?>">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="profile" href="http://gmpg.org/xfn/11">
-		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+				?><!DOCTYPE html>
+				<html <?php language_attributes(); ?>>
+					<head>
+						<meta charset="<?php bloginfo( 'charset' ); ?>">
+						<meta name="viewport" content="width=device-width, initial-scale=1">
+						<link rel="profile" href="http://gmpg.org/xfn/11">
+						<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<?php wp_head(); ?>
-	</head>
+					<?php wp_head(); ?>
+					</head>
 
 
 
@@ -31,39 +31,56 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+
+				<div class="navigation_search_container">
+
+				<div class="menu_separate">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+					
+					
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav><!-- #site-navigation -->
+					</div>
 
-				<?php get_search_form();?>
-			</header><!-- #masthead -->
+							<div class="only_searchform">
+								<?php get_search_form();?> 
+					</div>	
+				</div>	
+												</nav><!-- #site-navigation -->
+												<!-- <div id="my-div"> -->
 
-			<?php //if ( has_post_thumbnail() ) {
-// 	          the_post_thumbnail();
-// } 
-if(is_front_page()){
-	if ( has_post_thumbnail() ) { ?>
+												<!-- <a href="#"> -->
+															
+												<!-- </a> -->
+												<!-- </div> -->
+											</header><!-- #masthead -->
 
-		<section class="home-hero" style=" height: 100vh;
-		background:linear-gradient(180deg, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)),
-		
-		url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover;">
-			<div class="logo-full">
-				<img src="<?php echo get_template_directory_uri();?>/images/inhabitent-logo-full.svg">
-			</div>
-		</section>
-		
-	<?php }
- }
+											<?php //if ( has_post_thumbnail() ) {
+								// 	          the_post_thumbnail();
+								// } 
+				
+
+
+							if(is_front_page()){
+								if ( has_post_thumbnail() ) { ?>
+
+									<section class="home-hero" style=" height: 100vh;
+									background:linear-gradient(180deg, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)),
+									
+									url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover;">
+										<div class="logo-full">
+											<img src="<?php echo get_template_directory_uri();?>/images/inhabitent-logo-full.svg">
+										</div>
+									</section>
+									
+								<?php }
+							}
 
  if(is_page('about')){
 	if ( has_post_thumbnail() ) { ?>
 	<section class="about-hero" style="height: 100vh; 
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) , rgba(0, 0, 0, 0.4)),
-	
-
-	 url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover;"> >
+	 url(<?php echo the_post_thumbnail_url(); ?>); background-size:cover; background-position:50% 100%;"> >
 		<div class="logo-full">
 		
 			<?php the_title(); ?>

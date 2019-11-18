@@ -29,49 +29,50 @@
             <?php endif; ?>
          </section>
 
- <section class="selected-posts">
-         <h2> Inhabitent Journal</h2>
-      <div class ="selected-posts-front-page">
-                  
-                <?php
-              $args = array( 'post_type' => 'post','posts_per_page' => 3, 'order' => 'DESC' );
-                $journal_posts = get_posts( $args ); // returns an array of posts
-              ?>
-              <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-          <article class="post">
-          
-            <div class="post-image">
-              <?php the_post_thumbnail([707,480]);?>
-            </div>
-<div class ="post-info-wrapper">
-            <div class ="post-date">
-              <?php the_date();?>
-            </div>
+                  <section class="selected-posts">
+                      <h2> Inhabitent Journal</h2>
+                            <div class ="selected-posts-front-page">
+                                                  
+                                <?php
+                                  $args = array( 'post_type' => 'post','posts_per_page' => 3, 'order' => 'DESC' );
+                                  $journal_posts = get_posts( $args ); // returns an array of posts
+                                  ?>
+                                 <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+                          <article class="post">
+                                          
+                                    <div class="post-image">
+                                     <?php the_post_thumbnail([707,480]);?>
+                                      </div>
+                                <div class ="post-info-wrapper">
+                                        <div class ="post-date">
+                                          <?php the_date();?>
+                                        </div>
 
-            <div class="post-title">
-              <?php the_title();?>
-            </div>
-            
-               </div>
-               <!-- <button type="front-page_button1">Read Entry </button> -->
-<a class="front_page_button">
-<?php the_title( sprintf( '<h2<button type="front-page_button1"></button><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+                                         <div class="post-title">
+                                              <?php the_title();?>
+                                          </div>
+                                            
+                                  </div>
+                                              <!-- <button type="front-page_button1">Read Entry </button> -->
+                                <div class="front_page_button">
+                                  <a href="<?php echo get_the_permalink(); ?>">Read More</a>
+                                <?php // the_title( sprintf( '<button type="front-page_button1"><h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-   <!-- get_the_permalink() -->
+                                  <!-- get_the_permalink() -->
 
-               </a>
-              
-          </article>
+                                              </div>
+                                              
+                            </article>
 
    
 
-                <?php //echo get_the_date();?> 
-                <!-- this is longer version echo will display but if we have only get_the_date
-              we will get only the data but not displayed -->
-              <?php endforeach; wp_reset_postdata(); ?>
+                              <?php //echo get_the_date();?> 
+                              <!-- this is longer version echo will display but if we have only get_the_date
+                            we will get only the data but not displayed -->
+                            <?php endforeach; wp_reset_postdata(); ?>
 
-      </div>
-  </section>
+                    </div>
+      </section>
   
     <section class="canoe-girl-nature">
     <h2> Latest Adventures</h2>

@@ -24,6 +24,7 @@ get_header(); ?>
 				$terms = get_terms( array(
 					'taxonomy' => 'product_type',
 					'hide_empty' => 0,
+					
 				) );
 				if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
 				?>
@@ -43,11 +44,13 @@ get_header(); ?>
 	
 			<?php /* Start the Loop */ ?>
 			
+			
+		<div class="product-grid-archive">
 			<?php while ( have_posts() ) : the_post(); ?>
 			
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header-general-for-products">
-						<div class="product-grid-archive">
+							<!-- <div class="product-grid-item"> -->
 							<div class="product-grid-item">
 										<div class="general-for-archive-products">
 												<div class="general-for-archive-picture">
@@ -64,20 +67,19 @@ get_header(); ?>
 												</div>	
 
 														<?php endif; ?>
-										</div>
-								</div>
+								
 							</div>
-						</div>
+					
 
 					</header><!-- .entry-header -->
 				</article><!-- #post-## -->
 
 
-						<?php endwhile; ?>
-
-
-						<?php the_posts_navigation(); ?>
-
+				<?php endwhile; ?>
+		   </div>
+		</div>
+	</div>
+	
 						<?php else : ?>
 
 							<?php get_template_part( 'template-parts/content', 'none' ); ?>

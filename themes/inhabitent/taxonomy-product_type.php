@@ -13,18 +13,24 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header-do-wear-sleep">
+				<h1 class="page-title">
+					<?php single_term_title(); ?>
+				</h1>
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					// the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<div class="product-grid-archive">
+			<?php while ( have_posts() ) : the_post(); ?>
+
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 
-					<div class="product-grid-archive">
-							<div class="product-grid-item">
+					<!-- <div class="product-grid-archive"> -->
+						<div class="product-grid-item">
 								<?php if ( has_post_thumbnail() ) : ?>
 										<?php the_post_thumbnail( 'large' ); ?>
 								<?php endif; ?>
@@ -41,17 +47,20 @@ get_header(); ?>
 										<?php if ( 'post' === get_post_type() ) : ?>
 												<div class="entry-meta">
 												
-												</div><!-- .entry-meta -->
+						</div><!-- .entry-meta -->
 										<?php endif; ?>
-							</div>
-					</div>
+							
 
 					</header><!-- .entry-header -->
+				</article>
+			<?php endwhile; ?>
+			
+		</div>	
 
 	<div class="entry-content">
 		
 	</div><!-- .entry-content -->
-</article><!-- #post-## -->
+</div><!-- #post-## -->
 
 
 

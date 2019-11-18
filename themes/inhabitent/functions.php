@@ -88,10 +88,13 @@ function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'red-starter-fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css' );
+//HERE START MY SEARCH FIELD SEARCH
 
-
-
+	wp_enqueue_script( 'inhabitent-script', get_template_directory_uri() . '/build/js/script.min.js', array('jquery'), '', true );
+//END OF FIELD SEARCH
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
+
+
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -128,3 +131,12 @@ function my_login_login_url($url)
 	// return home_url();
 	return 'http://localhost:8888/Inhabitant/';
 }
+
+function hwl_home_pagesize( $query ) {
+    if ( ! is_admin() && $query->is_main_query() && is_post_type_archive( 'product' ) ) {
+        // Display 50 posts for a custom post type called 'movie'
+        $query->set( 'posts_per_page', 16 );
+        return;
+    }
+}
+add_action( 'pre_get_posts', 'hwl_home_pagesize', 1 );

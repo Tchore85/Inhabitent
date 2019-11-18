@@ -409,9 +409,9 @@ table {
 --------------------------------------------------------------*/
 /* Buttons */
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -422,22 +422,22 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
+  padding: 0.6rem 1rem 0.4rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
+  input[type='button']:hover,
+  input[type='reset']:hover,
+  input[type='submit']:hover {
     border-color: #ccc #bbb #aaa;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
   button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
+  input[type='button']:active,
+  input[type='button']:focus,
+  input[type='reset']:active,
+  input[type='reset']:focus,
+  input[type='submit']:active,
+  input[type='submit']:focus {
     border-color: #aaa #bbb #bbb;
     -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
@@ -447,7 +447,6 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
@@ -456,15 +455,14 @@ textarea {
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
-  input[type="search"]:focus,
   textarea:focus {
     color: #111; }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'] {
   padding: 3px; }
 
 textarea {
@@ -562,16 +560,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-  margin-left: -150%; }
+  margin: 0 auto; }
 
 .search-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  margin-bottom: 1rem; }
 
 .search-submit {
   background: transparent;
@@ -579,6 +571,10 @@ a {
           box-shadow: none;
   color: white;
   border: none; }
+
+.blog .search-submit,
+.archive .search-submit {
+  color: #248a83; }
 
 fieldset {
   border: none;
@@ -610,6 +606,14 @@ fieldset {
 #comment {
   margin-top: 2rem;
   width: 82%; }
+
+.navigation_search_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -757,7 +761,6 @@ input {
 
 input[type='email'],
 input[type='password'],
-input[type='search'],
 input[type='text'],
 input[type='url'],
 textarea {
@@ -766,6 +769,9 @@ textarea {
   background-color: #f4f4f4;
   border: 1px solid #e1e1e1;
   border-radius: 0; }
+
+input[type='search'] {
+  border: none; }
 
 label {
   font-family: 'Novecento Sans Web', sans-serif; }
@@ -1047,13 +1053,26 @@ object {
   padding: 0.5rem 0;
   z-index: 3;
   height: 3rem;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .home-hero {
   position: relative;
   background-size: cover; }
+
+.home .site-header,
+.page-id-45 .site-header {
+  background-color: unset;
+  border-bottom: unset; }
+
+.home .menu_separate ul a,
+.page-id-45 .menu_separate ul a {
+  color: white; }
+
+.home .search-field,
+.page-id-45 .search-field {
+  background: transparent; }
 
 .page .entry-title {
   color: #404040;
@@ -1291,8 +1310,7 @@ button {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 5rem; }
+          justify-content: center; }
 
 .general-for-archive-title-price {
   display: -webkit-box;
