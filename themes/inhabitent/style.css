@@ -1072,7 +1072,8 @@ object {
 
 .home .search-field,
 .page-id-45 .search-field {
-  background: transparent; }
+  background: transparent;
+  display: none; }
 
 .page .entry-title {
   color: #404040;
@@ -1151,6 +1152,22 @@ a.btn {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 26%;
           flex: 0 1 26%; }
+
+.home .front_page_button a {
+  text-decoration: none;
+  border: 1px solid #000;
+  color: black;
+  font-size: 16px;
+  font-family: 'Novecento Sans Web', sans-serif;
+  line-height: 1;
+  margin-left: 1rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  bottom: 0.75rem;
+  left: 0.75rem; }
+  .home .front_page_button a:hover {
+    background: #248a83;
+    color: white; }
 
 .home .product-type-blocks {
   display: -webkit-box;

@@ -3,8 +3,12 @@
     // $('#my-div').hide(200);
 
     $('.search-submit').on('click', function(event) {
-      event.preventDefault();
-      $('.search-field').toggle('fast');
+      if (!$('.search-submit').hasClass('search-opened')) {
+        event.preventDefault();
+        $('.search-field').toggle('fast');
+      }
+
+      $('.search-submit').toggleClass('search-opened');
     });
 
     //your code goes here

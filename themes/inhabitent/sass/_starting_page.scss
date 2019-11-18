@@ -58,6 +58,25 @@ a.btn {
     flex: 0 1 26%;
   }
 
+  .front_page_button a {
+    text-decoration: none;
+    border: 1px solid #000;
+    color: black;
+    font-size: 16px;
+    font-family: 'Novecento Sans Web', sans-serif;
+    line-height: 1;
+    margin-left: 1rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    bottom: 0.75rem;
+    left: 0.75rem;
+
+    &:hover {
+      background: #248a83;
+      color: white;
+    }
+  }
+
   .product-type-blocks {
     display: flex;
     justify-content: space-around;
