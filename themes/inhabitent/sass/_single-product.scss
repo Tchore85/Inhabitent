@@ -1,3 +1,19 @@
+.single-product-article {
+  display: flex;
+  max-width: 1120px;
+  margin: auto;
+  .left-column {
+    width: 50%;
+    padding-right: 1rem;
+    margin-top: 2rem;
+  }
+  .right-column {
+    width: 50%;
+    padding-left: 1rem;
+    margin-top: 2rem;
+  }
+}
+
 .single-product {
   .entry-header {
     margin-top: 3rem;
@@ -12,19 +28,17 @@
 .single-single-picture {
   padding-bottom: 1rem;
   width: 495px;
-  margin-left: 12rem;
 }
 
 .single-single-title {
-  margin-left: 2rem;
-  margin-top: -2rem;
   .entry-title {
     color: #d99054;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 .single-single-price {
-  margin-left: -11rem;
-  margin-top: 1rem;
+  margin: 0;
 
   h2 {
     font-size: 28.8px;
@@ -36,9 +50,6 @@
   display: flex;
   line-height: 1.75;
   text-align: inherit;
-  margin-left: 50%;
-  margin-top: -24%;
-  position: absolute;
   width: 30rem;
 }
 .black-btn {
@@ -46,14 +57,16 @@
   color: #000;
   bottom: 0;
   background-color: transparent;
+  margin-bottom: 2rem;
+
+  &:hover {
+    background: #248a83;
+    color: white;
+  }
 }
 
 .single-product {
   .site-header {
     position: unset;
   }
-}
-
-.social-buttons {
-  margin-left: 50%;
 }

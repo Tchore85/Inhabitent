@@ -9,6 +9,11 @@
 
 get_header(); ?>
 
+
+<div class="grid-container">
+  <div class="journal-selection">
+
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -51,5 +56,11 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+</div>
 
+	<div class="sidebar-uni">
+	<?php get_sidebar(); ?>
+
+	</div>
+</div>
 <?php get_footer(); ?>

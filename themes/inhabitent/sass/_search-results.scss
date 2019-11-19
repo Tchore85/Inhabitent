@@ -1,0 +1,25 @@
+.search-results {
+  .page-title {
+    margin-top: 4rem;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 1rem;
+    font-size: 38px;
+  }
+  .site-main {
+    margin-left: 11rem;
+    margin-right: 4rem;
+  }
+  .entry-summary p {
+    width: 100%;
+  }
+  #post-162 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: inherit;
+  }
+  .entry-header {
+    margin-top: 0rem;
+    display: unset;
+  }
+}

@@ -72,6 +72,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import 'archive-product';
 @import 'single-product.scss';
 @import 'taxonomy-product-type';
+@import 'search-results';
+@import 'error-page';
+
 body {
   font-family: 'Merriweather Web', serif;
   background-color: #ffffff;

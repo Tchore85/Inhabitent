@@ -1,6 +1,6 @@
 .logo-full {
   position: absolute;
-  // margin: -45% 40%;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -8,7 +8,6 @@
 .home-hero2 img {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)),
     #969696;
-  // url(../images/home-hero.jpg);
 }
 
 .site-header {
@@ -27,7 +26,6 @@
 .home-hero {
   position: relative;
   background-size: cover;
-  // background-position: 50% 100%;
 }
 
 .home,
