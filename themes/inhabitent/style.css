@@ -1102,8 +1102,11 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 93%;
+  margin: auto; }
 
 a.btn {
   font-family: 'Novecento Sans Web', sans-serif;
@@ -1262,6 +1265,9 @@ button {
   font-family: sans-serif;
   font-family: 'Novecento Sans Web', sans-serif;
   margin-top: 1.5rem; }
+  button:hover {
+    background: #248a83;
+    color: white; }
 
 .about-page .entry-title {
   color: #fff;
@@ -1295,7 +1301,8 @@ button {
   color: white;
   text-transform: uppercase;
   font-family: 'Novecento Sans Web', sans-serif;
-  font-size: 33px; }
+  font-size: 45px;
+  font-weight: bold; }
 
 .page-id-45 .entry-header {
   margin-top: 0; }
@@ -1401,11 +1408,10 @@ button {
   margin-top: 0;
   margin-bottom: 0; }
 
-.single-single-price {
+.single-single-price h2 {
+  font-size: 28.8px;
+  font-weight: normal;
   margin: 0; }
-  .single-single-price h2 {
-    font-size: 28.8px;
-    font-weight: normal; }
 
 .entry-content-single-single {
   display: -webkit-box;

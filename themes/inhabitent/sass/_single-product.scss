@@ -2,6 +2,7 @@
   display: flex;
   max-width: 1120px;
   margin: auto;
+
   .left-column {
     width: 50%;
     padding-right: 1rem;
@@ -38,11 +39,10 @@
   }
 }
 .single-single-price {
-  margin: 0;
-
   h2 {
     font-size: 28.8px;
     font-weight: normal;
+    margin: 0;
   }
 }
 

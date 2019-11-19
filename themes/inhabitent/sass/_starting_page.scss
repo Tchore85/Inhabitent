@@ -1,6 +1,8 @@
 .selected-posts-front-page {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  width: 93%;
+  margin: auto;
 }
 
 a.btn {
@@ -174,4 +176,9 @@ button {
   font-family: sans-serif;
   font-family: 'Novecento Sans Web', sans-serif;
   margin-top: 1.5rem;
+
+  &:hover {
+    background: #248a83;
+    color: white;
+  }
 }
