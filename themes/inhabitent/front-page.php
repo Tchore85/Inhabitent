@@ -53,10 +53,10 @@
                                           </div>
                                             
                                   </div>
-                                              <!-- <button type="front-page_button1">Read Entry </button> -->
+                                              
                                 <div class="front_page_button">
                                   <a href="<?php echo get_the_permalink(); ?>">Read More</a>
-                                <?php // the_title( sprintf( '<button type="front-page_button1"><h2><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+                                
 
                                   <!-- get_the_permalink() -->
 
@@ -86,7 +86,7 @@
           </div>
 
           <div class="beach-fire">
-          <!-- <div class="fire-beach-pcs"> -->
+  
           <a class="beach-text">A Night With Friends at the Beach<br><button type="button">Read More</button></a>
             <img class="fire-beach-pcs"src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/beach-bonfire.jpg">
 

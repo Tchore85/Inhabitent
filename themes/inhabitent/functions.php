@@ -134,7 +134,7 @@ function my_login_login_url($url)
 
 function hwl_home_pagesize( $query ) {
     if ( ! is_admin() && $query->is_main_query() && is_post_type_archive( 'product' ) ) {
-        // Display 50 posts for a custom post type called 'movie'
+       
         $query->set( 'posts_per_page', 16 );
         return;
     }

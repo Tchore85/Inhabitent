@@ -17,7 +17,7 @@ get_header(); ?>
 					<?php single_term_title(); ?>
 				</h1>
 				<?php
-					// the_archive_title( '<h1 class="page-title">', '</h1>' );
+					
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -29,7 +29,7 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 
-					<!-- <div class="product-grid-archive"> -->
+					
 						<div class="product-grid-item">
 								<?php if ( has_post_thumbnail() ) : ?>
 										<?php the_post_thumbnail( 'large' ); ?>

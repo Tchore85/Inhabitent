@@ -1141,7 +1141,7 @@ a.btn {
   text-decoration: none;
   letter-spacing: 2px;
   line-height: 1.25;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold; }
 
 .home .post-info-wrapper {
@@ -1519,6 +1519,9 @@ button {
 
 .widget_categories .cat-item a {
   margin-left: -5.5rem; }
+
+#archives-dropdown--1 {
+  font-family: 'Novecento Sans Web', sans-serif; }
 
 body {
   font-family: 'Merriweather Web', serif;

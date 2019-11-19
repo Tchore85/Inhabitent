@@ -50,7 +50,7 @@ get_header(); ?>
 			
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header-general-for-products">
-							<!-- <div class="product-grid-item"> -->
+							
 							<div class="product-grid-item">
 										<div class="general-for-archive-products">
 												<div class="general-for-archive-picture">

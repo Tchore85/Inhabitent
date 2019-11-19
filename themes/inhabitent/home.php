@@ -9,11 +9,6 @@ get_header(); ?>
 
 <div class="grid-container">
   <div class="journal-selection">
- 
-  <!-- <img src="<?php echo get_stylesheet_directory_uri();?>/images/blog-photos/van-camper.jpg"> -->
-  <div class="van">
-<!-- <img src="<?php echo get_stylesheet_directory_uri();?>/images/blog-photos/van-camper.jpg"> -->
-</div>
 
 
 	<div id="primary" class="content-area">
