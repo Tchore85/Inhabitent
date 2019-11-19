@@ -75,34 +75,34 @@
       </section>
   
     <section class="canoe-girl-nature">
-    <h2> Latest Adventures</h2>
-    <div class="grid-container-nature">
+          <h2> Latest Adventures</h2>
+            <div class="grid-container-nature">
 
-    <div class="canoe-girl">
+                  <div class="canoe-girl">
   
-          <a class="canoe-text">Getting Back To Nature in a Canoe<button type="button">Read More</button></a> 
-            <img class="canoe-direct" style= background-color: rgba(0, 0, 0, 0.35) , src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/canoe-girl.jpg">
+                    <a class="canoe-text">Getting Back To Nature in a Canoe<button type="button">Read More</button></a> 
+                      <img class="canoe-direct" style= background-color: rgba(0, 0, 0, 0.35) , src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/canoe-girl.jpg">
       
-          </div>
+                  </div>
 
-          <div class="beach-fire">
+                    <div class="beach-fire">
   
-          <a class="beach-text">A Night With Friends at the Beach<br><button type="button">Read More</button></a>
-            <img class="fire-beach-pcs"src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/beach-bonfire.jpg">
+                        <a class="beach-text">A Night With Friends at the Beach<br><button type="button">Read More</button></a>
+                           <img class="fire-beach-pcs"src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/beach-bonfire.jpg">
 
-          </div>
+                    </div>
 
-          <div class="hills">
-          <a class="hills-text">Taking in the View At Big Mountain<button type="button">Read More</button></a>
-            <img class="hills-pcs" src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/mountain-hikers.jpg">
+                         <div class="hills">
+                           <a class="hills-text">Taking in the View At Big Mountain<button type="button">Read More</button></a>
+                              <img class="hills-pcs" src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/mountain-hikers.jpg">
 
-            </div>
-            <div class="sky">
-            <a class="stars-text">Star-Ganzing at the Night Sky<button type="button">Read More</button></a>
-            <img class="stars-pct" src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/night-sky.jpg">
-            </div>
-            </div>  
-    </section>
+                          </div>
+                          <div class="sky">
+                            <a class="stars-text">Star-Ganzing at the Night Sky<button type="button">Read More</button></a>
+                              <img class="stars-pct" src="<?php echo get_stylesheet_directory_uri();?>/images/adventure-photos/night-sky.jpg">
+                          </div>
+                         </div>  
+                      </section>
 
   
 
