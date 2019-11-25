@@ -2,6 +2,7 @@
   display: flex;
   max-width: 1120px;
   margin: auto;
+  padding-top: 3rem;
 
   .left-column {
     width: 50%;
@@ -67,6 +68,7 @@
 
 .single-product {
   .site-header {
-    position: unset;
+    // padding-top: 3rem;
+    // position: unset;
   }
 }

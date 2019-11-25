@@ -416,14 +416,11 @@ input[type='submit'] {
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: 0.6rem 1rem 0.4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: 0.6rem 1rem 0.4rem; }
   button:hover,
   input[type='button']:hover,
   input[type='reset']:hover,
@@ -565,22 +562,23 @@ a {
 .search-form {
   margin-bottom: 1rem; }
 
-.search-submit {
+.icon-search {
   background: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
   color: white;
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
-.blog .search-submit,
-.archive .search-submit,
-.single-product .search-submit {
+.blog .icon-search,
+.archive .icon-search,
+.single-product .icon-search {
   color: #248a83; }
 
 fieldset {
   border: none;
-  padding-top: 0rem;
-  padding-right: 2rem; }
+  padding-top: 1.5rem;
+  padding-right: 1rem; }
 
 .main-navigation {
   display: -webkit-box;
@@ -1071,8 +1069,7 @@ object {
 .page-id-45 .menu_separate ul a {
   color: white; }
 
-.home .search-field,
-.page-id-45 .search-field {
+.site-header .search-field {
   background: transparent;
   display: none; }
 
@@ -1335,7 +1332,9 @@ button {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-top: 0rem;
+  padding-top: 4rem; }
 
 .general-for-archive-title-price {
   display: -webkit-box;
@@ -1381,7 +1380,8 @@ button {
   display: -ms-flexbox;
   display: flex;
   max-width: 1120px;
-  margin: auto; }
+  margin: auto;
+  padding-top: 3rem; }
   .single-product-article .left-column {
     width: 50%;
     padding-right: 1rem;
@@ -1431,9 +1431,6 @@ button {
     background: #248a83;
     color: white; }
 
-.single-product .site-header {
-  position: unset; }
-
 .page-header-do-wear-sleep .page-title,
 .page-header-do-wear-sleep .taxonomy-description {
   display: -webkit-box;
@@ -1441,14 +1438,15 @@ button {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin-top: 0rem; }
 
 .page-header-do-wear-sleep .taxonomy-description {
   border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 1.5rem; }
 
-.archive .site-header {
-  position: unset; }
+.archive .page-header-do-wear-sleep .page-title {
+  padding-top: 4rem; }
 
 .search-results .page-title {
   margin-top: 4rem;
@@ -1475,8 +1473,7 @@ button {
   text-align: inherit; }
 
 .search-results .entry-header {
-  margin-top: 0rem;
-  display: unset; }
+  margin-top: 0rem; }
 
 .error404 .page-title {
   margin-top: 4rem;

@@ -3,6 +3,7 @@
   .taxonomy-description {
     display: flex;
     justify-content: center;
+    margin-top: 0rem;
   }
   .taxonomy-description {
     border-bottom: 1px dashed #c8c8c8;
@@ -12,6 +13,12 @@
 
 .archive {
   .site-header {
-    position: unset;
+    // position: unset;
+  }
+
+  .page-header-do-wear-sleep {
+    .page-title {
+      padding-top: 4rem;
+    }
   }
 }

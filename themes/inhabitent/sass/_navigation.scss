@@ -152,25 +152,26 @@ a {
   margin-bottom: 1rem;
 }
 
-.search-submit {
+.icon-search {
   background: transparent;
   box-shadow: none;
   color: white;
   border: none;
+  cursor: pointer;
 }
 
 .blog,
 .archive,
 .single-product {
-  .search-submit {
+  .icon-search {
     color: #248a83;
   }
 }
 
 fieldset {
   border: none;
-  padding-top: 0rem;
-  padding-right: 2rem;
+  padding-top: 1.5rem;
+  padding-right: 1rem;
 }
 
 .main-navigation {
