@@ -4,7 +4,7 @@
 
 Project is build on based the Word Press custom Underscores Theme.
 
-<img src="./images/main-girl-inhabitant.png"  />
+<img src="./themes/inhabitent/images/main-girl-inhabitant.png"  />
 
 ## Key Learnings
 
