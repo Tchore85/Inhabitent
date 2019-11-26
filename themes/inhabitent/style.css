@@ -1373,7 +1373,7 @@ button {
 
 .product-grid-item {
   border: 1px solid #e1e1e1;
-  height: 250px; }
+  height: 300px; }
 
 .general-for-archive-title-price h2 {
   font-size: 1rem;
@@ -1475,6 +1475,10 @@ button {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover; }
+
+.archive .product-grid-item {
+  border: 1px solid #e1e1e1;
+  height: 300px; }
 
 .page-header-do-wear-sleep .page-title {
   padding-top: 4rem; }

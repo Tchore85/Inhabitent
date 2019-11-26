@@ -31,9 +31,12 @@ get_header(); ?>
 
 					
 						<div class="product-grid-item">
+						    <div class ="thumbnail-wrapper">
 								<?php if ( has_post_thumbnail() ) : ?>
 										<?php the_post_thumbnail( 'large' ); ?>
 								<?php endif; ?>
+
+							</div>				
 
 									<div class="general-for-archive-title-price">
 												<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
