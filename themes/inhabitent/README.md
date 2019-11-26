@@ -1,6 +1,10 @@
 # Inhabitent
 
-Author: Michal Prokop
+### Project Descriptions
+
+Project is build on based the Word Press custom Underscores Theme.
+
+<img src="./images/main-girl-inhabitant.png"  />
 
 ## Key Learnings
 
@@ -15,3 +19,19 @@ Author: Michal Prokop
 - Applying SASS structure
 - Working with the Git
 - Java Vanilla and Jquery
+
+# Technologies Used
+
+- HTML
+- Css
+- Java Script
+- jQuery
+- PHP
+- Word Press
+- Package.jason Version "1.1.0"
+
+# Author:
+
+Michal Prokop
+Web developer student at Red Academy
+Vancouver, Canada, BC
