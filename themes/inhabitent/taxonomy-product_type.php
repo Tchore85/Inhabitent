@@ -55,7 +55,8 @@ get_header(); ?>
 				</article>
 			<?php endwhile; ?>
 			
-		</div>	
+		</div>	<!-- end of mai grid -->
+		
 
 	<div class="entry-content">
 		

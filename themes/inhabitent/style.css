@@ -395,10 +395,10 @@ dd {
   margin: 0 1.5rem 1.5rem; }
 
 img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 table {
   margin: 0 0 1.5rem;
@@ -921,6 +921,10 @@ object {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.boss-green {
+  position: relative;
+  line-height: 0; }
+
 .entry-content {
   margin-left: auto;
   margin-right: auto;
@@ -935,7 +939,6 @@ object {
   font-size: 2.1rem;
   margin-top: 2rem;
   width: 34rem;
-  margin-left: -7.75rem;
   padding: 0.75rem 1.5rem;
   line-height: 2.5rem; }
 
@@ -945,10 +948,9 @@ object {
   background: #248a83;
   color: white;
   text-transform: uppercase;
-  right: 504px;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   bottom: 0;
-  margin-bottom: 7.5rem; }
+  right: 0; }
 
 .blog .entry-meta {
   font-family: 'Novecento Sans Web', sans-serif;
@@ -956,9 +958,9 @@ object {
   background: #248a83;
   color: white;
   text-transform: uppercase;
-  right: 504px;
-  padding: 0.5rem 2rem;
-  margin-top: 35%; }
+  padding: 1rem 2rem;
+  right: 0;
+  bottom: 0; }
 
 .blog .entry-title a {
   color: white;
@@ -1304,6 +1306,10 @@ button {
 .page-id-45 .entry-header {
   margin-top: 0; }
 
+.archive #main {
+  width: 1165px;
+  margin: auto; }
+
 .first-page-product-choose {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1348,7 +1354,7 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 2.5rem; }
 
 .thumbnail-wrapper {
   background-color: #e1e1e1;
@@ -1357,7 +1363,8 @@ button {
   position: relative; }
 
 .product-grid-item {
-  border: 1px solid #e1e1e1; }
+  border: 1px solid #e1e1e1;
+  height: 250px; }
 
 .general-for-archive-title-price h2 {
   font-size: 1rem;
@@ -1374,6 +1381,12 @@ button {
   text-decoration: none;
   font-family: 'Merriweather Web', serif;
   color: #2f1339; }
+
+.general-for-archive-title-price .archive .general-for-archive-picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .single-product-article {
   display: -webkit-box;

@@ -52,20 +52,24 @@ get_header(); ?>
 					<header class="entry-header-general-for-products">
 							
 							<div class="product-grid-item">
-										<div class="general-for-archive-products">
-												<div class="general-for-archive-picture">
-														<?php if ( has_post_thumbnail() ) : ?>
-							         <div class ="thumbnail-wrapper">
-															<?php the_post_thumbnail( 'large' ); ?>
-							        </div>				
-												</div>
+									<!-- <div class="general-for-archive-products"> -->
+										
+									<div class="general-for-archive-picture">
+
+										<div class ="thumbnail-wrapper">
+
+											<?php if ( has_post_thumbnail() ) : ?>
+							         
+											<?php the_post_thumbnail( 'large' ); ?>
+											
+							        </div>					
 
 												<div class="general-for-archive-title-price">
 														<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 														<h2>.............$<?php the_field('price'); ?></h2>
 												</div>	
-
+										</div>
 														<?php endif; ?>
 								
 							</div>

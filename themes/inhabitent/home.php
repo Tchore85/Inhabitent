@@ -27,26 +27,38 @@ get_header(); ?>
 
                                 
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
                     <header class="entry-header journal-header">
-                        <?php if ( has_post_thumbnail() ) : ?>
-                            <?php the_post_thumbnail( 'full' ); ?>
-                        <?php endif; ?>
 
-                        <?php the_title( sprintf( '<h2 class="entry-title journal-entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-                        <?php if ( 'post' === get_post_type() ) : ?>
-                        <div class="entry-meta journal-entry-meta">
-                            <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-                        </div><!-- .entry-meta -->
-                        <?php endif; ?>
+                    <div class ="boss-green">
+
+                         <div class="journal-green-text">
+
+                            <?php the_title( sprintf( '<h2 class="entry-title journal-entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+                                </div>
+
+                                <div class="journal-green-picture">
+                                    <?php if ( has_post_thumbnail() ) : ?>
+                                        <?php the_post_thumbnail( 'full' ); ?>
+                                    <?php endif; ?>
+                                 </div>
+
+                                    <?php if ( 'post' === get_post_type() ) : ?>
+                            
+                            <div class="entry-meta journal-entry-meta">
+                                <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+                            </div><!-- .entry-meta -->
+                            <?php endif; ?>
+                        </div>                         
                     </header><!-- .entry-header -->
 
-                    <div class="entry-content">
-                        <?php the_excerpt(); ?>
-                    </div><!-- .entry-content -->
-                </article><!-- #post-## -->
+                                    <div class="entry-content">
+                                        <?php the_excerpt(); ?>
+                                    </div><!-- .entry-content -->
+                                </article><!-- #post-## -->
 
-			<?php endwhile; ?>
+                            <?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
 
