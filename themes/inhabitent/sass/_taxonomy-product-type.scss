@@ -12,13 +12,15 @@
 }
 
 .archive {
-  .site-header {
-    // position: unset;
+  .product-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
+}
 
-  .page-header-do-wear-sleep {
-    .page-title {
-      padding-top: 4rem;
-    }
+.page-header-do-wear-sleep {
+  .page-title {
+    padding-top: 4rem;
   }
 }

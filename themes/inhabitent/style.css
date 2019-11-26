@@ -395,10 +395,10 @@ dd {
   margin: 0 1.5rem 1.5rem; }
 
 img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; }
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */ }
 
 table {
   margin: 0 0 1.5rem;
@@ -1082,6 +1082,9 @@ object {
   font-size: 2.4rem;
   width: 73%; }
 
+.page-id-50 .icon-search {
+  color: #248a83; }
+
 .page .entry-content {
   margin-top: 1rem; }
 
@@ -1306,9 +1309,10 @@ button {
 .page-id-45 .entry-header {
   margin-top: 0; }
 
-.archive #main {
-  width: 1165px;
-  margin: auto; }
+.archive #content {
+  width: 1159px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .first-page-product-choose {
   display: -webkit-box;
@@ -1361,6 +1365,11 @@ button {
   height: 250px;
   overflow: hidden;
   position: relative; }
+  .thumbnail-wrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .product-grid-item {
   border: 1px solid #e1e1e1;
@@ -1387,6 +1396,9 @@ button {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover; }
+
+.general-for-archive-title-price .general-for-archive-products {
+  border: solid 2px black; }
 
 .single-product-article {
   display: -webkit-box;
@@ -1458,7 +1470,13 @@ button {
   border-bottom: 1px dashed #c8c8c8;
   margin-bottom: 1.5rem; }
 
-.archive .page-header-do-wear-sleep .page-title {
+.archive .product-grid-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.page-header-do-wear-sleep .page-title {
   padding-top: 4rem; }
 
 .search-results .page-title {

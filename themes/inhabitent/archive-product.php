@@ -52,7 +52,7 @@ get_header(); ?>
 					<header class="entry-header-general-for-products">
 							
 							<div class="product-grid-item">
-									<!-- <div class="general-for-archive-products"> -->
+								
 										
 									<div class="general-for-archive-picture">
 
@@ -70,7 +70,8 @@ get_header(); ?>
 														<h2>.............$<?php the_field('price'); ?></h2>
 												</div>	
 										</div>
-														<?php endif; ?>
+													
+										<?php endif; ?>
 								
 							</div>
 					
