@@ -26,36 +26,8 @@ get_header(); ?>
 		<div class="product-grid-archive">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header class="entry-header">
+			<?php get_template_part( 'template-parts/content', 'taxonomy' ); ?>
 
-					
-						<div class="product-grid-item">
-						    <div class ="thumbnail-wrapper">
-								<?php if ( has_post_thumbnail() ) : ?>
-										<?php the_post_thumbnail( 'large' ); ?>
-								<?php endif; ?>
-
-							</div>				
-
-									<div class="general-for-archive-title-price">
-												<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-												<h2>.............$<?php the_field('price'); ?></h2>
-									</div>	
-
-
-		
-
-										<?php if ( 'post' === get_post_type() ) : ?>
-												<div class="entry-meta">
-												
-						</div><!-- .entry-meta -->
-										<?php endif; ?>
-							
-
-					</header><!-- .entry-header -->
-				</article>
 			<?php endwhile; ?>
 			
 		</div>	<!-- end of mai grid -->
