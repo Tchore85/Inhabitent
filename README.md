@@ -2,7 +2,7 @@
 
 ### Project Descriptions
 
-Project is build on based the Word Press custom Underscores Theme.
+The project is built on base the Word Press custom Underscores Theme. The project is demonstrating the effective use of combinations of different technologies. For more information see section (#Technologies Used)!
 
 <img src="./themes/inhabitent/images/main-girl-inhabitant.png"  />
 
