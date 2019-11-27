@@ -1,4 +1,7 @@
 .search-results {
+  .fa-search {
+    color: #248a83;
+  }
   .page-title {
     margin-top: 4rem;
     border-bottom: 1px solid #e1e1e1;
@@ -12,7 +15,11 @@
   .entry-summary p {
     width: 100%;
   }
-  #post-162 {
+  .entry-title {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  article {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -20,6 +27,34 @@
   }
   .entry-header {
     margin-top: 0rem;
-    // display: unset;
+    display: unset;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+.search-no-results {
+  .page-content p {
+    display: flex;
+    text-align: center;
+    margin-left: 11rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 1rem;
+    font-size: 24px;
+  }
+  .fa-search {
+    color: #248a83;
+    font-size: 20px;
+  }
+  .search-form {
+    display: flex;
+    justify-content: center;
+  }
+  input[type='search'],
+  input[type='input'] {
+    border: solid 1px grey;
+    border-radius: 3rem;
   }
 }

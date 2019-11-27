@@ -1,7 +1,5 @@
 (function($) {
   $(function() {
-    // $('#my-div').hide(200);
-
     $('.site-header .icon-search').on('click', function(event) {
       event.preventDefault();
       if (!$('.site-header .icon-search').hasClass('search-opened')) {
