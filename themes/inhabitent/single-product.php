@@ -67,11 +67,7 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
-<!-- </div>
 
-
-
-</div> -->
 
 <?php get_footer(); ?>
 

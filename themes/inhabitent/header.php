@@ -66,19 +66,13 @@
 					</div>	
 				</div>	
 												</nav><!-- #site-navigation -->
-												<!-- <div id="my-div"> -->
 
-												<!-- <a href="#"> -->
-															
-												<!-- </a> -->
-												<!-- </div> -->
+
+									
 											</header><!-- #masthead -->
 
-											<?php //if ( has_post_thumbnail() ) {
-								// 	          the_post_thumbnail();
-								// } 
-				
-
+											<?php 
+							
 
 							if(is_front_page()){
 								if ( has_post_thumbnail() ) { ?>

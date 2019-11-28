@@ -17,17 +17,5 @@
         $('.site-header .icon-search').removeClass('search-opened');
       }
     });
-
-    //your code goes here
-  }); //end of doc ready
+  });
 })(jQuery);
-
-// $('.search-submit').on('click', triggerClick);
-// function triggerClick(event) {
-//   if (!$('.search-submit').hasClass('search-opened')) {
-//     event.preventDefault();
-//     $('.search-field').toggle('fast');
-//   }
-
-//   $('.search-submit').toggleClass('search-opened');
-// }

@@ -20,7 +20,6 @@
 </div>
 			<p>
 	<i class="fas fa-envelope"></i>
-<!-- <i class="envelope"></i> -->
 <i class="a-footer">
 
 			<a href="https://www.linkedin.com/in/michal-prokop-b4994617">info@inhabitent.com</a>
@@ -62,12 +61,6 @@
 				</div>
 				</div>
 				</div>
-
-
-		<!-- <div class="dark-wood" alt="wood"> -->
-	<!-- <img src="<?php// echo get_stylesheet_directory_uri();?>/images/dark-wood.png"> -->
-
-	<!-- <img src="../../images/dark-wood.png" alt="wood"> -->
 	
 					</div>
 									</div><!-- .site-info -->

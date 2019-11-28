@@ -6,8 +6,6 @@
 <div id="primary" class="content-area canoe-girl">
 <main id="main" class="site-mai" role="main">
 
-
-<!-- <section class="selected-posts"> -->
 <section class="product-info container">
             <h2>Shop Stuff</h2>
             <?php
@@ -103,17 +101,7 @@
                           </div>
                          </div>  
                       </section>
-
-  
-
-
-
-
-
-
               <!-- </section> -->
-
-
 
           </main>
             </div>

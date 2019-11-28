@@ -71,8 +71,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-
-    <?php //wp_get_archives('type=yearly'); ?>
     
     </div>
 

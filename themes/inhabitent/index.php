@@ -37,7 +37,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 
-	<?php //wp_get_archives('type=yearly'); ?>
+	
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

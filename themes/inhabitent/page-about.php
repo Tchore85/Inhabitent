@@ -20,8 +20,4 @@
 	</div><!-- #primary -->
 
 
-
-
-	<?php //wp_get_archives('type=yearly'); ?>
-
 <?php get_footer();?>
