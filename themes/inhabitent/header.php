@@ -22,7 +22,9 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header" role="banner">
+
+	
 				<div class="site-branding">
 
 					<div class="logo">
@@ -46,6 +48,7 @@
 			<?php	} ?>
 					
 			</div>
+
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
@@ -67,7 +70,7 @@
 				</div>	
 												</nav><!-- #site-navigation -->
 
-
+		
 									
 											</header><!-- #masthead -->
 
