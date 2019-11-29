@@ -1,20 +1,21 @@
 (function($) {
   $(function() {
-    $('.site-header .icon-search').on('click', function(event) {
-      event.preventDefault();
-      if (!$('.site-header .icon-search').hasClass('search-opened')) {
-        $('.site-header .search-field')
-          .toggle('fast')
-          .focus();
+    const $iconSearch = $('.site-header .icon-search');
+    const $searchField = $('.site-header .search-field');
 
-        $('.site-header .icon-search').addClass('search-opened');
+    $iconSearch.on('click', function(event) {
+      event.preventDefault();
+      if (!$iconSearch.hasClass('search-opened')) {
+        $searchField.toggle('fast').focus();
+
+        $iconSearch.addClass('search-opened');
       }
     });
 
-    $('.site-header .search-field').on('blur', function() {
-      if ($('.site-header .icon-search').hasClass('search-opened')) {
-        $('.site-header .search-field').toggle('fast');
-        $('.site-header .icon-search').removeClass('search-opened');
+    $searchField.on('blur', function() {
+      if ($iconSearch.hasClass('search-opened')) {
+        $searchField.toggle('fast');
+        $iconSearch.removeClass('search-opened');
       }
     });
   });
